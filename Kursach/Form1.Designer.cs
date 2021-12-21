@@ -57,7 +57,7 @@ namespace Kursach
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picDisplay);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Система частиц";
             ((System.ComponentModel.ISupportInitialize)(this.picDisplay)).EndInit();
             this.ResumeLayout(false);
 
