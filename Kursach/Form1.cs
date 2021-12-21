@@ -31,12 +31,6 @@ namespace Kursach
             picDisplay.Invalidate();
         }
 
-        private void picDisplay_MouseMove(object sender, MouseEventArgs e)
-        {
-            //p.Xp = e.X;
-            //p.Yp = e.Y;
-        }
-
         private void picDisplay_MouseClick_1(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -47,14 +41,15 @@ namespace Kursach
                 emitter.points.Add(p);
             }else if(e.Button == MouseButtons.Right)
             {
-                /*foreach(var point in emitter.points)
+                foreach(var point in emitter.points)
                 {
                     double d = Math.Sqrt(Math.Pow(e.X - point.Xp, 2) + Math.Pow(e.Y - point.Yp, 2));
                     if (d <= point.R)
                     {
-                        //emitter.points.RemoveAt(0);
+                        point.Xp = -20;
+                        point.Yp = -20;
                     }
-                }*/
+                }
             }
         }
     }

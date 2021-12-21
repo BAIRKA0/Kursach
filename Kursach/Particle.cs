@@ -73,17 +73,4 @@ namespace Kursach
             b.Dispose();
         }
     }
-    /*public class ParticalGreen : Particle
-    {
-    
-        public override void Draw(Graphics g)
-        {
-            //float k = Math.Min(1f, Life / 100);
-            // так как k уменьшается от 1 до 0, то порядок цветов обратный
-            //var color = MixColor(ToColor, FromColor, k);
-            var b = new SolidBrush(Color.Green);
-            g.FillEllipse(b, X - Radius, Y - Radius, Radius * 2, Radius * 2);
-            b.Dispose();
-        }
-    }*/
 }
